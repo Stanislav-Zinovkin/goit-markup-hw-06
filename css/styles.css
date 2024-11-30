@@ -26,7 +26,13 @@ img {
   height: auto;
 }
 section {
-  padding: 120px 0;
+  padding: 96px 0;
+}
+
+@media only screen and (min-width: 1158px) {
+  section {
+    padding: 120px 0;
+  }
 }
 /*Modile*/
 .container {
@@ -205,9 +211,20 @@ address {
     ),
     url(../images/people-office-1.jpg);
   background-color: #2e2f42;
-  padding: 188px 0;
+  padding: 72px 0;
   text-align: center;
   margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  .main-page {
+    padding: 112px 0;
+    width: 216px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .main-page {
+    padding: 188px 0;
+  }
 }
 
 .title-text {
@@ -221,7 +238,7 @@ address {
   text-align: center;
   color: #fff;
 }
-@media only screen and(min-width:768px) {
+@media only screen and (min-width: 768px) {
   .title-text {
     font-size: 56px;
     line-height: 107%;
@@ -242,7 +259,7 @@ address {
 .button {
   display: block;
   padding: 16px 32px;
-  margin: 48px auto 0px auto;
+  margin: 72px auto 0px auto;
   border-radius: 4px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -259,6 +276,16 @@ address {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media only screen and (min-width: 768px) {
+  .button {
+    margin: 36px auto 0px auto;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .button {
+    margin: 48px auto 0px auto;
+  }
+}
 
 .features-descr {
   font-family: 'Roboto', sans-serif;
@@ -268,6 +295,7 @@ address {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 @media only screen and (min-width: 768px) {
   .features-descr {
@@ -281,7 +309,6 @@ address {
     line-height: 120%;
     letter-spacing: 0.02em;
     text-align: left;
-    margin-bottom: 8px;
   }
 }
 
@@ -350,7 +377,7 @@ address {
   letter-spacing: 0.02em;
   color: #434455;
 }
-@media only screen and(min-width:1158px) {
+@media only screen and (min-width: 1158px) {
   .descr {
     font-weight: 400;
   }
@@ -379,6 +406,7 @@ address {
   align-items: center;
   margin-top: 8px;
 }
+
 .workers-links .social-link {
   display: flex;
   justify-content: center;
@@ -409,7 +437,7 @@ address {
 .work-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 72px;
   align-items: center;
 }
 @media only screen and (min-width: 768px) {
@@ -422,6 +450,7 @@ address {
 }
 @media only screen and (min-width: 1158px) {
   .work-list {
+    gap: 24px;
     flex-wrap: nowrap;
   }
 }
@@ -472,6 +501,8 @@ address {
 }
 .img-prod {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 @media only screen and (min-width: 768px) {
   .img-prod {
@@ -480,12 +511,13 @@ address {
 }
 @media only screen and (min-width: 1158px) {
   .img-prod {
+    box-shadow: none;
     width: calc((100% - 48px) / 3);
   }
-}
-.img-prod:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  .img-prod:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
 }
 
 .prod {
@@ -554,7 +586,13 @@ address {
   width: 264px;
 }
 .footer {
-  padding: 100px 0;
+  padding: 96px 0;
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
 }
 #footer {
   background-color: #2e2f42;
@@ -595,6 +633,7 @@ address {
 @media only screen and (min-width: 1158px) {
   .foot {
     justify-content: flex-start;
+    margin-right: 120px;
   }
 }
 .foot-items {
@@ -609,14 +648,17 @@ address {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
+    gap: 72px 24px;
   }
 }
+
 @media only screen and (min-width: 1158px) {
   .foot-items {
     display: flex;
     flex-wrap: nowrap;
     align-items: baseline;
+    gap: 0;
   }
 }
 
@@ -638,6 +680,8 @@ address {
 }
 
 @media only screen and (min-width: 768px) {
+  .bottom-form {
+  }
 }
 @media only screen and (min-width: 1158px) {
   .bottom-form {
@@ -654,8 +698,8 @@ address {
 @media only screen and (min-width: 768px) {
   .form-footer {
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 24px;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -671,7 +715,7 @@ address {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #ffffff;
-  width: 208px;
+
   margin-bottom: 16px;
 }
 @media only screen and (min-width: 768px) {
@@ -982,14 +1026,15 @@ textarea:focus-within {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin-bottom: auto;
+}
+.mobile-menu-link {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 111%;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 24px;
-  margin-bottom: auto;
 }
 .mobile-menu-contact-list {
   display: flex;
